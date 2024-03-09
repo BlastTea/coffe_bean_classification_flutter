@@ -1,0 +1,36 @@
+name: coffe_bean
+description: "A new Flutter project."
+publish_to: 'none'
+version: 0.1.0-1.prototype.1
+
+environment:
+  sdk: '>=3.3.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  image: ^4.1.7
+  image_picker: ^1.0.7
+  m_widget:
+    git:
+      url: https://github.com/BlastTea/MWidget.git
+      ref: 7ee878a89029f918427c56560e17f3356eeedb31
+  tflite_flutter: ^0.10.4
+
+dev_dependencies:
+  flutter_launcher_icons: ^0.13.1
+  flutter_lints: ^3.0.0
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/models/
+    - assets/images/
+    - assets/images/test/
+    - assets/logos/
+
+flutter_launcher_icons:
+  android: true
+  image_path: "assets/logos/coffe bean.png"
